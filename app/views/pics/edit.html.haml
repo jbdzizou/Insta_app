@@ -1,7 +1,12 @@
 #edit_page.col-md-8.col-md-offset.2
     .row
         .pannel.pannel-default
+
             .pannel-heading
                 %h1 Fix Pic!
             .pannel-body
+                .curernt_image
+                    %strong.center Right now
+                    = image_tag @pic.image.url(:medium)
                 = render 'form'
+
