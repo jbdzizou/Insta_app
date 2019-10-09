@@ -41,6 +41,7 @@ gem 'simple_form', '~> 5.0'
 gem 'haml', '>= 5.1.2'
 gem 'devise', '~> 4.5'
 gem 'paperclip'
+gem 'masonry-rails', '~> 0.2.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
