@@ -1,24 +1,42 @@
-# README
+###### tags: `Rails` `Docker`
+# Rails Instagram app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## Description
+Rails Instagram-like application
 
-* Ruby version
+## Version
+Docker version 19.03.2  
+Docker-compose version 1.24.1  
+Rails 5.2.3  
+ruby 2.6.3  
+mysql 5.7  
 
-* System dependencies
+## Getting started
+1.git pull files  
+```
+$ git clone git@github.com:jbdzizou/  
+$ cd 
+```
+2.container build  
+`$ docker-compose up -d`
 
-* Configuration
+3.Command to execute DB creation task in Rails container  
+`$ docker-compose run web rake db:create`
 
-* Database creation
+If the database already exists,Enter the following command  
+`$ docker-compose run web rails db:migrate`
 
-* Database initialization
+4.login to localhost(your chrome or etc)  
+http://localhost:3000 or http://address:3000
 
-* How to run the test suite
+## ADD GEM
 
-* Services (job queues, cache servers, search engines, etc.)
+- bootstrap-sass
+- simple_for
+- haml
+- devise
+- paperclip
+- masonry-rails
+- acts_as_votable
 
-* Deployment instructions
-
-* ...

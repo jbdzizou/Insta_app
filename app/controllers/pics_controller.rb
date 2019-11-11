@@ -7,7 +7,7 @@ class PicsController < ApplicationController
   end
 
   def new
-    @pic = current_user.pics.build 
+    @pic = current_user.pics.build
   end
 
   def show
@@ -38,7 +38,7 @@ class PicsController < ApplicationController
     @pic.destroy
     redirect_to root_path
   end
-  
+
   def upvote
     @pic.upvote_by current_user
     redirect_to :back
